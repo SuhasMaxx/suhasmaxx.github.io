@@ -45,6 +45,10 @@ template.innerHTML =  `
   height: 80px;
 }
 
+.progress-ring{
+  margin-bottom: 10px;
+}
+
 
 </style>
 <div class="circle-container-block">
@@ -63,6 +67,7 @@ template.innerHTML =  `
                 cy="60" 
             ></circle>
         </svg>
+        <span class="title-text">{{}}</span>
     </div>
 </div>`;
 
@@ -72,7 +77,7 @@ class CircleProgress extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('img').src = 'assets/img/'+this.getAttribute('img');
-
+        this.shadowRoot.querySelector('.title-text').innerHTML = this.getAttribute('techname');
         this.drawCirclePercent();
     }
 
