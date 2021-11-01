@@ -56,6 +56,10 @@ tTextTemplate.innerHTML =  `
       color: #ede9ff;
     }
   }
+  
+  .animate-text{
+    height: 30px;
+  }
 
   .text-content{
     display: inline-block;
