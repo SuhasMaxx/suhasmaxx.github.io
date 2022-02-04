@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Vue app with webpack 4</title>
+    <style>
+        body{
+            margin: 0px;
+
+                /* CSS HEX */
+            --rich-black-fogra-39: #0b090aff;
+            --eerie-black: #161a1dff;
+            --blood-red: #660708ff;
+            --ruby-red: #a4161aff;
+            --carnelian: #ba181bff;
+            --imperial-red: #e5383bff;
+            --silver-chalice: #b1a7a6ff;
+            --light-gray: #d3d3d3ff;
+            --cultured: #f5f3f4ff;
+            --white: #ffffffff;
+
+            /* CSS HSL */
+            --rich-black-fogra-39: hsla(330, 10%, 4%, 1);
+            --eerie-black: hsla(206, 14%, 10%, 1);
+            --blood-red: hsla(359, 87%, 21%, 1);
+            --ruby-red: hsla(358, 76%, 36%, 1);
+            --carnelian: hsla(359, 77%, 41%, 1);
+            --imperial-red: hsla(359, 77%, 56%, 1);
+            --silver-chalice: hsla(5, 7%, 67%, 1);
+            --light-gray: hsla(0, 0%, 83%, 1);
+            --cultured: hsla(330, 9%, 96%, 1);
+            --white: hsla(0, 0%, 100%, 1);
+
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            background-color: var(--eerie-black);
+            height: 100vh;
+        }
+    </style>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="app">
+        <div class="banner"></div>
+        <t-v-box-app></t-v-box-app>
+    </div>
+  </body>
+</html>
