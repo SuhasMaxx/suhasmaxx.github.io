@@ -5,17 +5,17 @@ export class SlidingText extends LitElement {
         width: 400px;
         height: 40px;
         bottom: 0;
+		text-align: center;
     }   
     .content {
-		position: absolute;
-		left: 45%;
-		/* transform: translate(-50%, -50%); */
+		position: relative;
 		height: 160px;
 		overflow: hidden;
 		font-family: 'Lato', sans-serif;
 		font-size: 22px;
 		line-height: 40px;
 		color: #ecf0f1;
+		display: inline-block;
 	}
 	.content__container {
 		font-weight: normal;
@@ -67,13 +67,7 @@ export class SlidingText extends LitElement {
 		color: #00fff3;
 		margin: 0;
 	}
-	/* Align sliding text in mobile view  */
-	@media only screen and (max-width:620px) {
-		.content {
-			position: absolute;
-			left: 10%;
-		}
-	}
+	
 	@-webkit-keyframes opacity {
 		0%, 100% {
 			opacity: 0;
