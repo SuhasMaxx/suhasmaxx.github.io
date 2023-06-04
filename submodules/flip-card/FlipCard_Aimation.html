@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1beb4;
+  text-align: center;
+  color: #920200;
+}
+
+.flippable-card {
+  background-color: transparent;
+  width: 300px;
+  height: 430px;
+  perspective: 1000px;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.flippable-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flippable-card.opened .flippable-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flippable-card-front, .flippable-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flippable-card-front {
+  color: black;
+  border-radius: 5px;
+}
+
+.flippable-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+img.card-back{
+  width:300px;
+  height:430px;
+  border-radius: 5px;;
+}
+
+.red-card .flippable-card-back{
+  background-color:red;
+}
+
+p.card-number{
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  font-size: 0.7rem;
+  padding: 3px;
+  text-align: center;
+  color: rgb(53, 53, 53);
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Flip a Card!</h1>
+<h4>Click on the card to flip</h4>
+<br>
+<div class="flippable-card" onclick="flipcard()">
+  <div class="flippable-card-inner">
+    <div class="flippable-card-front">
+      <img src="CardBack.jpg" alt="Avatar" class="card-back">
+    </div>
+    <div class="flippable-card-back">
+      <p class="card-number">4</p>
+    </div>
+  </div>
+</div>
+
+<footer> &copy; Suhas Sanmukh (https://github.com/SuhasMaxx)</footer>
+<script>
+
+function flipcard(){
+console.log(document.querySelector('.flippable-card'));
+var card = document.querySelector('.flippable-card');
+var cardText = document.querySelector('.card-number');
+if(card.classList.contains('opened')){
+    card.classList.remove('opened');
+} else {
+  cardText.innerHTML = Math.floor(Math.random() * 10) + 1;
+  card.classList.add('opened');
+  if(card.classList.contains('red-card')){
+    card.classList.remove('red-card');
+  } else {
+    card.classList.add('red-card');
+  }
+}
+}
+</script>
+
+</body>
+</html>
