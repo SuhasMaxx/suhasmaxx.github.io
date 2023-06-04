@@ -5,9 +5,9 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f1beb4;
+  background-color: #392759;
   text-align: center;
-  color: #920200;
+  color: #E8F0FF;
 }
 
 .flippable-card {
@@ -27,7 +27,7 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 .flippable-card.opened .flippable-card-inner {
@@ -48,10 +48,11 @@ body {
 }
 
 .flippable-card-back {
-  background-color: #2980b9;
-  color: white;
+  color: #6874E8;
+  background-color: white;
   transform: rotateY(180deg);
   border-radius: 5px;
+  border: 20px solid #6874E8;
 }
 
 img.card-back{
@@ -61,7 +62,8 @@ img.card-back{
 }
 
 .red-card .flippable-card-back{
-  background-color:red;
+  color:#F7ACCF;
+  border-color: #F7ACCF;
 }
 
 p.card-number{
