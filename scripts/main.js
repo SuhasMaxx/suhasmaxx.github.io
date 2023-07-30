@@ -1,10 +1,10 @@
 // var circle = document.querySelector('circle');
-var circle = document.querySelector('circle-progress').shadowRoot.querySelector('circle');
+/* var circle = document.querySelector('circle-progress').shadowRoot.querySelector('circle');
 var radius = circle.r.baseVal.value;
 var circumference = radius * 2 * Math.PI;
 
 circle.style.strokeDasharray = `${circumference} ${circumference}`;
-circle.style.strokeDashoffset = circumference - (100 / 100) * circumference;;
+circle.style.strokeDashoffset = circumference - (100 / 100) * circumference;; */
 
 
 /* var circle = document.querySelector('circle');
