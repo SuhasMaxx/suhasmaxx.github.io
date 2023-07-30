@@ -66,6 +66,7 @@ export class SlidingText extends LitElement {
 		line-height: 40px;
 		color: #00fff3;
 		margin: 0;
+		text-align: center;
 	}
 	
 	@-webkit-keyframes opacity {

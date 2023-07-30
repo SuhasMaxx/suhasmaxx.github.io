@@ -20,11 +20,11 @@
   color: inherit;
 }
 
-@back-color-dark: #2d2d2d;
-@back-color-mid: #2c436f;
-@back-color-soft: #536b98;
-@text-color-1: #ede9ff;
-@text-color-2: #f8efe6;
+@back-color-dark: #071952;
+@back-color-mid: #0B666A;
+@back-color-soft: #35A29F;
+@text-color-1: #97FEED;
+@text-color-2: #97FEED;
 
 .palette-container{
   width: 100%;
@@ -96,19 +96,18 @@ h1{
 }
 
 .page-section{
-  color: #f8efe6;
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .intro-section{
-  background-color: @back-color-mid;
-  color: @text-color-2;
+  background-color: @text-color-2;
+  color: @back-color-dark;
   padding: 3% 15%;
-  box-shadow: 0px 0px 10px 3px #1d1919;
-  -webkit-box-shadow: 0px 0px 10px 3px #1d1919;
-  -moz-box-shadow: 0px 0px 10px 3px #1d1919;
+  box-shadow: 0px 0px 10px 3px @back-color-soft;
+  -webkit-box-shadow: 0px 0px 10px 3px @back-color-soft;
+  -moz-box-shadow: 0px 0px 10px 3px @back-color-soft;
   font-size: 20px;
 }
 
@@ -120,10 +119,11 @@ h1{
 }
 
 .experiece-section{
-  background-color: #526996;
-  box-shadow: 0px 0px 10px 3px #1d1919;
-  -webkit-box-shadow: 0px 0px 10px 3px #1d1919;
-  -moz-box-shadow: 0px 0px 10px 3px #1d1919;
+  background-color: @text-color-2;
+  color: @back-color-dark;
+  box-shadow: 0px 0px 10px 3px @back-color-soft;
+  -webkit-box-shadow: 0px 0px 10px 3px @back-color-soft;
+  -moz-box-shadow: 0px 0px 10px 3px @back-color-soft;
 }
 
 .contact-section{
@@ -149,7 +149,7 @@ h1{
 .self-portrait{
   width: 150px;
   height: 150px;
-  border: 4px solid @back-color-soft;
+  border: 4px solid @text-color-2;
   border-radius: 100px;
 }
 
@@ -238,14 +238,14 @@ h1{
   cursor: pointer;
   margin: 8px;
   padding: 12px 18px;
-  background-color: @text-color-1;
+  background-color: @text-color-2;
   color: @text-color-2;
   display: inline-block;
-  border-radius: 12px;
-  border: 2px solid #2c436f;
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  border-radius: 4px;
+  /* border: 2px solid #2c436f; */
+  /* -webkit-box-shadow: inset 2px 2px 10px 0px @back-color-dark;
+  -moz-box-shadow: inset 2px 2px 10px 0px @back-color-dark;
+  box-shadow: inset 2px 2px 10px 0px @back-color-dark; */
 }
 
 .job-title{
@@ -266,11 +266,11 @@ h1{
 
 footer{
   font-size: 10px;
-  color: #6f6f6f;
+  color: @back-color-soft;
   text-align: center;
 }
 
 footer hr{
-  border: 1px solid #6f6f6f;
+  border: 1px solid @back-color-mid;
   width: 80%;
 }
