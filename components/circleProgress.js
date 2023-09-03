@@ -27,9 +27,9 @@ template.innerHTML =  `
   border-radius: 60px;
   margin: 25px;
   box-shadow: 
-        inset 0 0 50px #fff,
+        inset 0 0 50px #44ffee,
         
-        0 0 25px #fff, -5px 0 40px #f0f, 5px 0 40px #0ff;
+        0 0 25px #44ffee, -5px 0 40px #f0f, 5px 0 40px #0ff;
 }
 
 .icon-container{
@@ -60,7 +60,7 @@ template.innerHTML =  `
             <circle 
                 class="ring-circle glow" 
                 stroke-width="7" 
-                stroke="#0ff" 
+                stroke="#44ffee" 
                 fill="transparent" 
                 r="57" 
                 cx="60" 

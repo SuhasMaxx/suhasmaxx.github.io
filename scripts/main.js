@@ -1,29 +1,7 @@
-// var circle = document.querySelector('circle');
-/* var circle = document.querySelector('circle-progress').shadowRoot.querySelector('circle');
-var radius = circle.r.baseVal.value;
-var circumference = radius * 2 * Math.PI;
-
-circle.style.strokeDasharray = `${circumference} ${circumference}`;
-circle.style.strokeDashoffset = circumference - (100 / 100) * circumference;; */
-
-
-/* var circle = document.querySelector('circle');
-var radius = circle.r.baseVal.value;
-var circumference = radius * 2 * Math.PI;
-
-circle.style.strokeDasharray = `${circumference} ${circumference}`;
-circle.style.strokeDashoffset = circumference - (80 / 100) * circumference; */
-
-/* function setProgress(percent) {
-  const offset = circumference - percent / 100 * circumference;
-  circle.style.strokeDashoffset = offset;
-}
-
-const input = document.querySelector('input');
-setProgress(input.value);
-
-input.addEventListener('change', function(e) {
-  if (input.value < 101 && input.value > -1) {
-    setProgress(input.value);
-  }  
-}) */
+import "../components/neonFlickrText/neonFlickrText.js";
+import "../components/circleProgress.js";
+import "../components/typingText.js";
+import "../components/slidingText.js";
+import "../components/jobCard.js";
+import "../components/socialIconsBar/socialIconsBar.js";
+import "../components/neonFlickrText/neonFlickrText.js";
