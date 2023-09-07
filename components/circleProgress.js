@@ -60,7 +60,7 @@ template.innerHTML =  `
             <circle 
                 class="ring-circle glow" 
                 stroke-width="7" 
-                stroke="#44ffee" 
+                stroke="#a9dbba" 
                 fill="transparent" 
                 r="57" 
                 cx="60" 
