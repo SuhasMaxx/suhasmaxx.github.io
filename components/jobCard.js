@@ -29,7 +29,7 @@ export class JobCard extends LitElement {
       }
       /*  */
 
-      .comapny-logo {
+      .company-logo {
         width: 200px;
         height: 60px;
         display: block;
@@ -38,7 +38,6 @@ export class JobCard extends LitElement {
         background-position: center;
         margin-right: 10px;
         background-color: white;
-        border-radius: 15px;
         padding: 5px;
         min-width: 150px;
       }
@@ -86,7 +85,7 @@ export class JobCard extends LitElement {
   render() {
     return html`<div class="job-card-container">
       <a
-        class="comapny-logo ${this.icon}"
+        class="company-logo ${this.icon}"
         href=${this.URL}
         target="_blank"
         style="background-image: url('./../assets/logos/${this.icon}.${this
